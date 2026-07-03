@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Physical Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+</head>
+<body>
+    <h2>Sports Physical Form</h2>
+    <form action="action.html" method="get">
+
+        <!-- Athlete Information -->
+        <fieldset>
+            <legend><h4>Athlete Information</h4></legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name"><br>
+                </li>
+                <li>
+                    <label for="schol">School/Team:</label>
+                    <input type="text" name="School" id="school" placeholder="Enter Your School/Team"><br>
+                </li>
+                <li>
+                    <label for="Sport">Sport:</label>
+                    <input type="text" name="Sport" id="Sport" placeholder="Enter The Sport"><br>
+                </li>
+                <li>
+                    <label for="parents">Parents/Guardian Name:</label>
+                    <input type="text" name="parents" id="parents" placeholder="Enter Parents/Guardian Name"><br>
+                </li>
+                <li>
+                    <label for="Contact">Contact Number:</label>
+                    <input type="number" name="Contact" id="Contact" placeholder="Enter Contact Number"><br>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- Medical History for Athlete -->
+        <fieldset>
+            <legend><h4>Medical History for Athlete</h4></legend>
+            <ul>
+                <li>
+                    <label for="History">History of concussions:</label>
+                    <input type="radio" id="History_concussions_yes" name="History" value="History_concussions_yes" ><label for="History_concussions_yes">Yes</label>
+                    <input type="radio" id="History_concussions_no" name="History" value="History_concussions_no" ><label for="History_concussions_no">No</label><br>
+                </li>
+                <li>
+                    <label for="Surgeries">Previous Surgeries:</label>
+                    <input type="text" name="Surgeries" id="Surgeries"><br>
+                </li>
+                <li>
+                    <label for="Bone">Any Bone Fractures?</label>
+                    <input type="radio" id="Bone_yes" name="Bone" value="Bone_yes" ><label for="Bone_yes">Yes</label>
+                    <input type="radio" id="Bone_no" name="Bone" value="Bone_no" ><label for="Bone_no">No</label><br>
+                </li>
+                
+                <li>
+                    <label for="Ashthma">Ashthma of Breathing Problems:</label>
+                    <input type="radio" id="Ashthma_yes" name="Ashthma" value="Ashthma_yes" ><label for="Ashthma_yes">Yes</label>
+                    <input type="radio" id="Ashthma_no" name="Ashthma" value="Ashthma_no" ><label for="Ashthma_no">No</label><br>
+                </li>
+            </ul>
+        </fieldset>
+
+
+        <!-- Doctor's Recommendation Sport Partition -->
+        <fieldset>
+            <legend><h4>Doctor's Recommendation Sport Partition</h4></legend>
+            <ul>
+                <li>
+                    <label for="clear">Clear for Sports</label>
+                    <input type="radio" name="Clear" id="clear_yes" value="Clear_yes" ><label for="clear_yes">Yes</label>
+                    <input type="radio" name="Clear" id="clear_no" value="Clear_no" ><label for="clear_no">No</label><br>
+                </li>
+                <li>
+                    <label for="reason">If Not cleared, reason:</label>
+                    <input type="text" name="reason" id="reason" value="no clear reason" readonly>
+                </li>
+            </ul>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h4>Select Your Department</h4></legend>
+            <select id="department" name="department">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Electronics and Communication">Electronics and Communication</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h4>Select Your Hobbies</h4></legend>
+            <input type="checkbox" id="hobby1" name="hobbies_1" value="reading">
+            <label for="hobby1">Reading</label>
+
+            <input type="checkbox" id="hobby2" name="hobbies_2" value="sports">
+            <label for="hobby2">Sports</label>
+
+            <input type="checkbox" id="hobby3" name="hobbies_3" value="music">
+            <label for="hobby3">Music</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><h4>Select Your Gender</h4></legend>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>Address</h4></legend>
+            <textarea name="Address" id="message" cols="30" rows="3" placeholder="Enter your address here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><h4>General Info</h4></legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here...">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password here...">
+            <br>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" aria-placeholder="Enter Your Number here...">
+            <br>
+            <label for="date">Date:</label>
+            <input type="datetime-local" id="date" name="date">
+            <br>
+            <label for="profile">Profile:</label>
+            <input type="file" id="file" name="file" placeholder="Choose Your file" accept=".jpg,.png,jpeg">
+            <br>
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf">
+            <br>
+            <label for="wordfile">Word File:</label>
+            <input type="file" id="word" name="word" accept=".docx">
+            <br>
+            <label for="excel">Excel File:</label>
+            <input type="file" id="excel" name="excel" accept=".xlxs">
+
+        </fieldset>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+            border-collapse:collapse;
+        }
+        td,
+        th {
+            font-size: 22px;
+            border: 1px solid;
+            padding: 10px;
+        }
+        th{
+            background-color:rgb(254, 167, 211);
+        }
+        caption{
+            font-size: 25px;
+        }
+        td{
+            font-size: 20px;
+            background-color:rgb(225, 247, 207);
+        }
+        tfoot td{
+            background-color:powderblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <!-- colgroup is used to apply styling in each column
+        <colgroup>
+            <col style="background-color: aqua;">
+            <col style="background-color: blueviolet;">
+        </colgroup>-->
+        <!-- rowspan is used to span(aqquire) multiple row
+         <rowapan align="">
+        -->
+
+        <caption>This Table having employee Salary records</caption>
+        <thead>
+            <tr>
+              <th>Emp Code</th>
+                 <th>Emp Name</th>
+                <th>Job Title</th>
+                <th>Salary(LPA)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>911</td>
+                <td>Zoya Saikh</td>
+                <td>Developer</td>
+                <td>3.6</td>
+            </tr>
+            <tr>
+                <td>912</td>
+                <td>Lisa Dev</td>
+                <td>Tester</td>
+                <td rowspan="2">2.8</td>
+            </tr>
+            <tr>
+                <td>913</td>
+                <td>Deepak Jadeja</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>914</td>
+                <td>Aiti Yewale</td>
+                <td>Digital Marketing</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>915</td>
+                <td>Simran Rao</td>
+                <td>HR</td>
+                <td>5.6</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr style="text-align: center;">
+            <td colspan="4">This table footer</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
