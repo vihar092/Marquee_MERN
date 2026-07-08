@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .title {
+            background-color: salmon;
+            border: 4px solid black;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        li:hover {
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+
+        .title h1 {
+            font-size: 41px;
+        }
+        .title:hover{
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 8px solid darkblue;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .box:hover{
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+
+        ul {
+            margin-left: 50px;
+        }
+
+        li {
+            font-size: 22px;
+            margin: 5px;
+            padding: 10px;
+            color: rgb(255, 0, 255);
+            background-color: wheat;
+        }
+
+        .formate {
+            background-color: yellow;
+
+            color: rgb(238, 7, 238);
+        }
+
+        .highlight {
+            background-color: white;
+            border: solid black;
+            padding: 18px;
+        }
+        .formate:hover{
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+        .highlight:hover{
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+        .box:hover{
+            background-color: lightseagreen;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Box Model</h1>
+    </div>
+
+    <div class="box">
+        Every element on the page has its own box, which can be styled using
+        CSS...
+    </div>
+
+    <div class="box">From the inside out:</div>
+
+    <ul>
+        <li class="formate">content</li>
+        <li >padding</li>
+        <li class="formate">border</li>
+        <li>margin</li>
+    </ul>
+
+    <br /><br />
+
+    <h1>Background</h1>
+
+    <div class="box">
+        Keep in mind that a
+        <span class="highlight">background</span>
+        will cover the content and the padding.
+    </div>
+</body>
+
+</html>
