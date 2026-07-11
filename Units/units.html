@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-content{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: auto;
+        }
+
+        .child{
+            width: 50%;
+            height: 50%;   
+            background-color: blue;
+            margin: auto;
+        }
+        :root{
+            --box-sizing:border-box;
+            --text-color: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: var(--box-sizing);
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="side_bar">
+
+        </aside>
+        <main class="main-content">
+            <div class="child">
+
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

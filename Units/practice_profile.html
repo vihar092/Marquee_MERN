@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e8e8e8;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 330px;
+            height: 420px;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .header {
+                width: 100%;
+                height: 120px;
+                background-color: rgb(127, 190, 0);
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid white;
+            position: absolute;
+            top: 69px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .content {
+            margin-top: 65px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            color: #222;
+        }
+
+        .content p {
+            margin-top: 8px;
+            font-size: 17px;
+            color: #666;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .social-icons a:nth-child(1) {
+            background: #1877F2;
+        }
+
+        .social-icons a:nth-child(2) {
+            background: #1DA1F2;
+        }
+
+        .social-icons a:nth-child(3) {
+            background: #E1306C;
+        }
+
+        .social-icons a:nth-child(4) {
+            background: #FF0000;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .buttons button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            background: royalblue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buttons button:hover {
+            background: #1f4fd1;
+        }
+
+        .stats {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0 18px;
+            color: #555;
+        }
+
+        /* Vertical line between items */
+        .stat:not(:last-child) {
+            border-right: 2px solid #ccc;
+        }
+
+        .stat i {
+            font-size: 18px;
+        }
+
+        .stat span {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="header">
+            <img class="profile"
+                src="https://img.freepik.com/premium-photo/design-professional-profile-picture-with-sharp-focus-natural-lighting-clean-neutral-background_880763-20280.jpg"
+                alt="profile">
+        </div>
+        <div class="content">
+            <h2>CodingLab</h2>
+            <p>Youtuber & Blogger</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="buttons">
+                <button>Subscribe</button>
+                <button>Message</button>
+            </div>
+            <div class="stats">
+
+                <div class="stat">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>60.4K</span>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>20K</span>
+                </div>
+
+                <div class="stat">
+                    <i class="fa-solid fa-share"></i>
+                    <span>12.4K</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
