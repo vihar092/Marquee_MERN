@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman", serif;
+      border: 3px solid black;
+      min-height: 100vh;
+    }
+
+    .content {
+      width: 65%;
+
+      margin-left: 8px;
+
+      margin-top: 10px;
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 10px 0 20px 0;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 18px;
+    }
+
+    ol {
+      margin-left: 30px;
+    }
+
+    hr {
+      margin: 8px 0;
+    }
+
+    mark {
+      background: yellow;
+      font-style: italic;
+    }
+
+    a {
+      color: #2a72c5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    .social-box {
+      position: fixed;
+
+      right: 80px;
+
+      bottom: 250px;
+
+      display: flex;
+
+      gap: 12px;
+
+      padding: 8px;
+
+      border: 5px solid black;
+
+      background: white;
+    }
+
+    .social-box img {
+      width: 70px;
+
+      height: 70px;
+
+      border-radius: 50%;
+
+      transition: 0.3s;
+
+      cursor: pointer;
+    }
+
+    .social-box img:hover {
+      transform: scale(1.18);
+    }
+
+    table {
+      border: 2px dotted black;
+      border-collapse: collapse;
+      border-bottom: none;
+    }
+
+    th,
+    td {
+      border: 1px solid;
+      padding: 2px;
+    }
+
+    .sno {
+      text-align: center;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .qualification-heading {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>About Me</h1>
+
+    <p>Welcome to my digital profile</p>
+
+    <img class="profile"
+      src="https://png.pngtree.com/png-vector/20230831/ourlarge/pngtree-man-avatar-image-for-profile-png-image_9197912.png"
+      alt="Profile" />
+
+    <h1>Hi, I'm a Developer & Educator</h1>
+
+    <p>
+      I am a passionate professional dedicated to building impactful web
+      applications and sharing my knowledge with students around the world.
+      Over the past few years, I have focused heavily on mastering modern
+      technologies to solve complex, real-world problems.
+    </p>
+
+    <p>
+      In my work, I always emphasize writing
+      <b>clean, maintainable code</b>
+      and focusing on
+      <mark>user-centric design</mark>. Learning is a lifelong journey, and I
+      make it a priority to stay updated with the latest industry standards
+      and engineering best practices.
+    </p>
+
+    <h2>My Core Skills & Focus Areas</h2>
+
+    <ul>
+      <li>
+        <b>Frontend:</b>
+        Designing interactive user interfaces using modern structured
+        components.
+      </li>
+
+      <ol>
+        <hr />
+
+        <li>
+          <b>HTML:</b>
+          HTML (HyperText Markup Language) is the skeleton of a webpage. It
+          defines the content and structure using headings, paragraphs,
+          images, links and buttons. For example, a simple HTML snippet:
+        </li>
+
+        <hr />
+
+        <li>
+          <b>CSS:</b>
+          CSS (Cascading Style Sheets) is used to style and format HTML
+          elements. It controls colors, fonts, spacing, layout and overall
+          visual appearance.
+        </li>
+
+        <hr />
+
+        <li>
+          <b>JavaScript:</b>
+          JavaScript is a scripting language that adds dynamic behaviour to
+          web pages. It allows the page to respond to user actions such as
+          clicks, form submissions and animations. For example:
+        </li>
+
+        <hr />
+      </ol>
+
+      <li>
+        <b>Backend:</b>
+        Creating reliable, secure and highly scalable server architectures.
+      </li>
+
+      <li>
+        <b>Mentorship:</b>
+        Helping aspiring engineers transition into technical roles through
+        hands-on practice.
+      </li>
+    </ul>
+
+
+    <h3 class="qualification-heading">My Qualifications</h3>
+
+    <table>
+      <thead>
+        <th colspan="4">Qualification</th>
+        <tr>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Board</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="sno">1.</td>
+          <td>10th</td>
+          <td>CBSE</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td class="sno">2.</td>
+          <td>12th</td>
+          <td>CBSE</td>
+          <td>B</td>
+        </tr>
+
+        <tr>
+          <td class="sno">3.</td>
+          <td>B.Tech</td>
+          <td>PU</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td colspan="4">This table contains the Edcations records</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h2>Let's Connect</h2>
+
+    <p>
+      You can explore my open-source projects directly on my
+      <a href="#">GitHub Profile</a>, or reach out to me via email for
+      collaborations at <a href="#">hello@example.com</a>.
+    </p>
+  </div>
+
+  <div class="social-box">
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X" />
+    </a>
+
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+    </a>
+
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+  </div>
+
+</body>
+
+</html>
