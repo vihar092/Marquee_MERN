@@ -1,216 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         body {
-            background: #f5f8fc;
-            padding: 50px;
-        }
-
-        .container {
-            width: 90%;
-            margin: auto;
-            text-align: center;
-        }
-
-        .container h1 {
-            color: #1b3f91;
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
-
-        .container p {
-            color: #555;
-            font-size: 20px;
-            margin-bottom: 50px;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            background-color: azure;
         }
 
         .card {
-            width: 340px;
-            background: #fff;
-            border-radius: 20px;
-            padding: 35px 30px;
             position: relative;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+
+        }
+
+        .one,
+        .two,
+        .three
+        {
+            position: relative;
+            padding: 23px;
+            height: 400px;
+            width: 300px;
+            background: linear-gradient(135deg, #c1f0dc, #e8fff5);
+            
+            border-radius: 50px;
             overflow: hidden;
         }
 
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        h3 {
+            color: red;
+        }
+
         .quote {
+
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 75px;
-            height: 75px;
-            background: #2d6df6;
-            border-bottom-left-radius: 75px;
-            display: flex;
+            top: -40px;
+            right: -40px;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
             justify-content: center;
             align-items: center;
+            display: flex;
+            background-color: blue;
         }
 
         .quote i {
             color: white;
-            font-size: 28px;
+            font-size: 35px;
+            transform: translate(-15px, 15px);
         }
 
-        .card h2 {
-            color: #264d9b;
-            font-size: 28px;
-            margin-top: 20px;
+        .chatbot {
+            position: fixed;
+            height: 100px;
+            width: 90px;
+            right: 30px;
+            bottom: 30px;
         }
 
-        .designation {
-            color: #ff6a4d;
-            font-weight: bold;
-            margin: 10px 0 20px;
+        .whatsapp {
+            position: fixed;
+            height: 85px;
+            width: 85px;
+            left: 30px;
+            border-radius: 50%;
+            bottom: 30px;
         }
 
         .stars {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .stars i {
             color: gold;
             font-size: 20px;
-            margin-bottom: 25px;
-        }
-
-        .review {
-            color: #555;
-            font-size: 20px;
-            line-height: 1.8;
-            text-align: left;
-        }
-
-        @media(max-width:1100px) {
-
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .card {
-                width: 90%;
-            }
-
+            margin: 0 2px;
         }
     </style>
-
 </head>
 
 <body>
-
-    <div class="container">
-
-        <h1>What Our Clients Say</h1>
-
-        <p>Read what our satisfied clients have to say about working with QASSERT</p>
-
-        <div class="cards">
-
-            <div class="card">
-
-                <div class="quote">
-                    <i class="fa-solid fa-quote-right"></i>
-                </div>
-
-                <h2>John Miller</h2>
-
-                <div class="designation">Software Architect</div>
-
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <p class="review">
-                    QAssert provided exceptional software testing support,
-                    ensuring our product was released bug-free and on schedule.
-                    Their attention to detail and professional approach made
-                    them a great partner.
-                </p>
-
+    <h1 style="text-align: center">What our Clients Say</h1>
+    <p style="text-align: center">
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+            dolorem</b>
+    </p>
+    <section class="card">
+        <div class="one">
+            <div class="quote">
+                <i class="fa-solid fa-quote-right"></i>
             </div>
-
-            <div class="card">
-
-                <div class="quote">
-                    <i class="fa-solid fa-quote-right"></i>
-                </div>
-
-                <h2>Samantha Turner</h2>
-
-                <div class="designation">Product Manager</div>
-
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <p class="review">
-                    Working with QAssert was a great experience. Their team
-                    quickly identified critical issues, suggested improvements,
-                    and ensured our product met the highest quality standards.
-                    Highly recommended!
-                </p>
-
+            <h1 style="text-align: center">John Miller</h1>
+            <h3 style="text-align: center">Software Architech</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
             </div>
-
-            <div class="card">
-
-                <div class="quote">
-                    <i class="fa-solid fa-quote-right"></i>
-                </div>
-
-                <h2>Michael Johnson</h2>
-
-                <div class="designation">Tech Lead</div>
-
-                <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <p class="review">
-                    QAssert's thorough testing saved us time and resources.
-                    Their test reports were comprehensive and actionable,
-                    helping us maintain product quality.
-                    Looking forward to more collaborations!
-                </p>
-
-            </div>
-
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+                veniam exercitationem blanditiis quod nesciunt! Hic, dicta, aspernatur
+                aliquid animi fuga voluptatem dolorum ullam odit at molestiae
+                assumenda, maxime earum! Sit? Unde magni dolores at a quis, enim,
+                debitis adipisci, ad quos nesciunt neque sint quaerat eaque
+                perferendis. Praesentium officia asperiores enim est dolorum molestias
+            </p>
         </div>
 
-    </div>
+        <div class="two">
+            <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+            <h1 style="text-align: center">Smantha Tumer</h1>
+            <h3 style="text-align: center">Product Manager</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+                veniam exercitationem blanditiis quod nesciunt! Hic, dicta, aspernatur
+                aliquid animi fuga voluptatem dolorum ullam odit at molestiae
+                assumenda, maxime earum! Sit? Unde magni dolores at a quis, enim,
+                debitis adipisci, ad quos nesciunt neque sint quaerat eaque
+                perferendis. Praesentium officia asperiores enim est dolorum molestias
+                voluptate unde. Facere quibusdam nulla vero! Nostrum, voluptatum
+            </p>
+        </div>
 
+        <div class="three">
+            <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+            <h1 style="text-align: center">Michael Johnson</h1>
+            <h3 style="text-align: center">Tech Lead</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+                veniam exercitationem blanditiis quod nesciunt! Hic, dicta, aspernatur
+                aliquid animi fuga voluptatem dolorum ullam odit at molestiae
+                assumenda, maxime earum! Sit? Unde magni dolores at a quis, enim,
+                debitis adipisci, ad quos nesciunt neque sint quaerat eaque
+                perferendis. Praesentium officia asperiores enim est dolorum molestias
+                voluptate unde. Facere quibusdam nulla vero! Nostrum, voluptatum
+            </p>
+        </div>
+    </section>
+    <div>
+        <img class="chatbot" src="https://img.freepik.com/free-vector/chatbot-conversation-vectorart_78370-4107.jpg"
+            alt="">
+    </div>
+    <div>
+        <img class="whatsapp" src="https://pngimg.com/uploads/whatsapp/whatsapp_PNG20.png" alt="">
+    </div>
 </body>
 
 </html>
